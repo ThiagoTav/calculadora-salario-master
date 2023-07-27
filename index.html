@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+       <h1> Cálculo de Folha de Pagamento</h1>
+    </header>
+    <div class="Meio">
+        <form id="Salario">
+            <div>
+                <input type="text" id="salario-bruto" class="input-dado" onblur="campo(0)" autocomplete="off">
+                <label for="salario-bruto" class="labelf"><b>Salario Bruto</b></label>
+            </div>
+            <div>
+                <input type="text" id="dependentes" class="input-dado" onblur="campo(1)" autocomplete="off">
+                <label for="dependentes" class="labelf"><b>Depedentes</b></label>
+            </div>
+            <div class="vale">
+                <input type="checkbox" id="checkbox" >
+                <label for="checkbox"><b>Vale transporte</b></label>
+            </div>
+            <button type="submit" class="botao">Calcular</button>
+        </form>
+
+        <form class="resultado" >
+            <h2>Resultado</h2>
+            <table class="tabela_impostos">
+                <tr>
+                    <td>Salário Bruto</td>
+                    <td class="valor-salario-bruto">AAA</td>
+                </tr>   
+                <tr>
+                    <td>INSS</td>
+                    <td class="valor-inss">AAA</td>
+                </tr>
+                <tr>
+                    <td>IRRF</td>
+                    <td class="valor-irrf">AAA</td>
+                </tr>
+                <tr>
+                    <td>Vale transporte</td>
+                    <td class="valor-transporte">AAA</td>
+                </tr>
+                <tr>
+                    <td>Salário Líquido</td>
+                    <td class="valor-salario-liquido">AAA</td>
+                </tr>
+                
+            </table>
+            <button type="submit" class="botao2">Resetar</button>
+        </form>
+    </div>
+    <footer>
+        <p>Todos os direitos reservados - Site HTML5 Semântico</p>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>

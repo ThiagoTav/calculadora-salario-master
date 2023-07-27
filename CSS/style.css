@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    color:black;
+    background-image: url(../img/333537.jpg) ;
+    background-size: 100%;
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    box-shadow: -5px 4px 15px rgb(19, 73, 49);
+    background-color:rgb(21, 56, 30);
+    align-items: center;
+    justify-content: center; 
+}
+
+header h1{
+    font-size: 40px;
+    color: rgb(209, 202, 202);
+    padding: 10px;
+}
+
+footer{
+    box-shadow: -5px 4px 15px rgb(6, 32, 13);
+    color: white;
+    background-color:rgb(21, 56, 30);
+    width:100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+#Salario{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 30px;
+background-color: rgba(10, 8, 8, 0.8);
+border-radius: 15%;
+height: 350px;
+width: 350px;
+}
+
+#Salario label{
+    font-size: 20px;
+    text-align: center;
+    width: auto;
+    cursor: text;
+}
+
+#Salario div{
+    width: auto;
+    position: relative;
+}
+
+.labelf{
+    width: auto;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    z-index: 1;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.vale{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#dependentes, #salario-bruto {
+    width: 200px;
+    height: 23px;
+    background-color: rgba(0, 0, 0, 0.027);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.2em;
+    border-bottom: 2px solid ;
+}
+
+/* o sinal de + aplica tal coisa no proximo elemento adjacente do tipo*/
+.input-dado:focus + label{  
+    color: #47a447 !important;
+    font-size: 0.95em !important;
+    top: -20px !important;
+    transition: .3s;
+}
+
+#checkbox{
+    width: 25px;
+    height: 25px;
+}
+
+.Meio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100vw;
+    height: 80vh;
+    gap: 40px;
+}
+
+.resultado{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(10, 8, 8, 0.8);
+    border-radius: 15%;
+    height: 350px;
+    width: 350px;
+    gap: 20px;
+    padding: 30px;
+}
+
+.activate {
+    display: flex;
+}
+
+.tabela_impostos{
+    display: flex;
+    flex-direction: column;
+}
+
+#Resultado h2{
+    display: flex;
+}
+
+.valor-salario-bruto{
+    display: flex;
+    padding: 10px;
+}
+
+.valor-inss{
+    display: flex;
+    padding: 10px;
+}
+
+.valor-irrf{
+    display: flex;
+    padding: 10px;
+}
+
+.valor-transporte{
+    display: flex;
+    padding: 10px;
+}
+
+.valor-salario-liquido{
+    display: flex;
+    padding: 10px;
+}
+
+.botao2{
+    background-color: forestgreen;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: -10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 4px;
+    font-size: 15px;
+    border: 1px solid #47a447;
+    padding: 4px;
+}
+
+.botao{
+    background-color: forestgreen;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 4px;
+    font-size: 15px;
+    border: 1px solid #47a447;
+    padding: 4px;
+}
